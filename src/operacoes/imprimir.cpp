@@ -1,4 +1,4 @@
-#include "imprimir.hpp"
+#include "../header/imprimir.hpp"
 #include "../estruturas.hpp"
 #include <iostream>
 

@@ -1,4 +1,4 @@
-#include "sucessor.hpp"
+#include "../header/sucessor.hpp"
 #include "../estruturas.hpp"
 #include <iostream>
 

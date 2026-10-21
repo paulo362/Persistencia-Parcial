@@ -6,6 +6,10 @@ struct Node;
 struct Modificacao{
     int versao;
     Node* novo_prox;
+
+    Modificacao(){}
+    Modificacao(int v, Node * prox) 
+        : versao(v), novo_prox(prox){}
 };
 
 struct Node{
@@ -30,5 +34,6 @@ extern int versao_atual;
 extern Node* versoes[1001];
 
 Node* ler_proximo(Node* no, int versao);
+void modif(Node* n, Node* prox);
 
 #endif
