@@ -1,8 +1,6 @@
-#include "estruturas.hpp"
-#include "header/imprimir.hpp"
-#include "header/sucessor.hpp"
-#include "header/insercao.hpp"
-#include "header/remocao.hpp"
+#include "header/operacoes.hpp"
+#include "header/estruturas.hpp"
+
 #include <iostream>
 using namespace std;
 

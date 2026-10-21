@@ -1,5 +1,5 @@
-#include "../estruturas.hpp"
-#include "../header/remocao.hpp"
+#include "../header/operacoes.hpp"
+#include "../header/estruturas.hpp"
 
 void remocao(int chave){
     //achar onde vai remover

@@ -1,5 +1,6 @@
-#include "../header/sucessor.hpp"
-#include "../estruturas.hpp"
+#include "../header/operacoes.hpp"
+#include "../header/estruturas.hpp"
+
 #include <iostream>
 
 using namespace std;

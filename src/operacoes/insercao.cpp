@@ -1,5 +1,5 @@
-#include "../estruturas.hpp"
-#include "../header/insercao.hpp"
+#include "../header/operacoes.hpp"
+#include "../header/estruturas.hpp"
 
 void insercao(int chave){
     //achar onde vai inserir

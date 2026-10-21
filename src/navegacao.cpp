@@ -1,4 +1,4 @@
-#include "estruturas.hpp"
+#include "header/estruturas.hpp"
 
 //funcao auxiliar para dado um no buscar o sucessor em uma versao
 Node* ler_proximo(Node* no, int versao){
