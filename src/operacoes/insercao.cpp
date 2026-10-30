@@ -2,6 +2,8 @@
 #include "../header/estruturas.hpp"
 
 void insercao(int chave){
+    versoes[versao_atual + 1] = versoes[versao_atual];
+    
     //achar onde vai inserir
     Node* atual = versoes[versao_atual];
     Node* anterior = nullptr;
@@ -13,21 +15,19 @@ void insercao(int chave){
 
     versao_atual++;
     Node* no = new Node(chave, versao_atual);
-    if(anterior == nullptr){
+    if(anterior == nullptr){ //inserir no comeco
         versoes[versao_atual] = no;
         no->prox = atual;
         if(atual != nullptr){
             atual->ponteiro_retorno = no;
         }
     }
-    else if (atual == nullptr){
-        modif(anterior, no);
-        no->ponteiro_retorno = anterior;
+    else if (atual == nullptr){ //inserir no final
+        no->ponteiro_retorno = modif(anterior, no);
     }
-    else {
+    else { //inserir no meio
         no->prox = atual;
         atual->ponteiro_retorno = no;
-        modif(anterior, no);
-        no->ponteiro_retorno = anterior;
+        no->ponteiro_retorno = modif(anterior, no);
     }
 }

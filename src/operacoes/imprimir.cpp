@@ -5,6 +5,7 @@
 using namespace std;
 
 void imprimir(int versao){
+    cout << "IMP " << versao << endl;
     versao = min(versao, versao_atual); //se a versao nao existir pega a atual
     Node *raiz = versoes[versao];
     if(raiz == nullptr){

@@ -6,6 +6,7 @@
 using namespace std;
 
 void sucessor(int n, int versao){
+    cout << "SUC " << n << " " << versao << endl;
     //como se trata de uma lista ordenada, basta ver o primeiro elemento que tem chave > n
     Node* raiz = versoes[versao];
     while(raiz != nullptr){
