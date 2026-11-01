@@ -28,8 +28,6 @@ struct Node{
 };
 
 //vetor com as raizes de cada versao
-// --- a priori, nao criei um struct pra versao pq n sei quais outras informacoes a gente pode precisar
-//     mas se tu achar que precisa, pode criar
 extern int versao_atual;
 extern Node* versoes[1001];
 
